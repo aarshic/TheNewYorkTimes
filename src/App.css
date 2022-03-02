@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.body {
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.app-header {
+    background-color: #282c34;
+    min-height: 4.5em;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+}
+  
+.searchTerm {
+    border: 3px solid #85accc;
+    padding: 5px;
+    padding-left: 10px;
+    height: 20px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    color: #9DBFAF;
+    flex: 10;
+}
+  
+.searchTerm:focus{
+    color: rgb(53, 49, 49);
+}
+
+.searchButton {
+    border: 3px solid #85accc;
+    padding: 5px;
+    height: 36px;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+    background-color: #85accc;
+    color: white;
+    margin-left: -5px;
+    font-style: bold;
+    flex: 1;
+}
+
+.wrap{
+    width: 60%;
+    display: flex;
+    margin-top: 35px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.list {
+    margin-top: 1.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
+}
+
+.article {
+    background-color: white;
+    border-radius: 5px;
+    border-color: rgb(73, 71, 71);
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 20px;
+    margin: 20px;
+    box-shadow: 6px 6px #dce0de;
+}
+
+.singleItem {
+    margin: 5%;
+    padding: 4%;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    margin-bottom: -20px;
+}
+
+.heading {
+    font-size: 1.2em;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 2;
+}
+
+.pubDate {
+    flex: 1;
+    text-align: right;
+    font-size: .6em;
+}
+
+.description {
+    font-size: .9em;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #4d4e50;
+}
+
+.footer {
+    display: flex;
+}
+
+.hashtags{
+    font-size: .6em;
+    flex: 1.5;
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.author{
+    text-align: right;
+    font-size: .8em;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.link {
+    text-emphasis-color: rgb(43, 41, 41);
+    color: rgb(58, 54, 54);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.link:visited{
+    color: rgb(58, 54, 54);
+}
+
+.link:hover{
+    color:rgb(145, 143, 143);
+}
+
+.link:active{
+    color: rgb(58, 54, 54);
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.paginationItem {
+    background: #fff;
+    border: 2px solid #666;
+    padding: 10px 15px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    margin: 0 5px;
+    cursor: pointer;
+}
+  
+.paginationItem span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.prev, .next {
+    background: #fff;
+    border: none;
+    padding: 10px;
+    color: rgb(104, 104, 104);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+  
+.paginationItem.active {
+    border: 1px solid #888;
+    color: #888;
+}
+  
+.prev.disabled, .next.disabled {
+    box-shadow: none;
+    color: #999;
+}
