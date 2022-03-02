@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import './App.css';
 
 const searchUrl = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=';
-const apiKey = '&api-key=cbSJ2mL5qGMvlrAjmOCQezGTiql7dZLK';
+const apiKey = '&api-key='
+const key = ''; //Add key
 
 const App = () => {
     const [articles, setArticles] = useState([]);
@@ -25,7 +26,7 @@ const App = () => {
     };
 
     const getArticles = async (keyword) => { //Articles are extracted for value searched
-        const response = await fetch(searchUrl + keyword + apiKey);
+        const response = await fetch(searchUrl + keyword + apiKey + key);
         const jsonData = await response.json();
         setArticles(jsonData.response.docs);
     };
